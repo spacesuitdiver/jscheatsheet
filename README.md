@@ -86,7 +86,7 @@ var car = { // define our object with the below properties and values
 car.make = 'Nissan'; // Changes the make property from 'Volkswagen' to 'Nissan'
 ```
 
-#### Assigning values using brackets (needed for properties with spaces)
+#### Assigning values using `[]` (brackets) (needed for properties with spaces)
 ```javascript
 car['make'] = 'Nissan';
 ```
@@ -249,3 +249,11 @@ myHeader.appendChild(mySubtitleElement); // append the previously created h2 to 
 var myRandomNumber = Math.floor(Math.random() * 10) + 1; // stores a random number between 1 and 10 in a variable named `myRandomNumber
 ```
 
+### Concatenation using `+`
+```javascript
+var age = 40;
+var hello = 'Hello, I am Chris, I am NOT ' + age + '... yet'; // concats the above value and stores them in a new variable
+console.log(hello); // logs "Hello, I am Chris, I am NOT 40... yet"
+
+
+```
