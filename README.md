@@ -244,10 +244,10 @@ myHeader.appendChild(mySubtitleElement); // append the previously created h2 to 
 
 ## Other Helpful Things
 
-### Concatenation using `+`
+### Combining strings using `+`
 ```javascript
 var age = 40;
-var hello = 'Hello, I am Chris, I am NOT ' + age + '... yet'; // concats the above value and stores them in a new variable
+var hello = 'Hello, I am Chris, I am NOT ' + age + '... yet'; // concatinates the above value and stores them in a new variable
 console.log(hello); // logs "Hello, I am Chris, I am NOT 40... yet"
 ```
 
