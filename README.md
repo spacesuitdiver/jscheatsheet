@@ -1,4 +1,4 @@
-# JavaScript Cheatsheet
+# JavaScript Cheat Sheet
 
 ## Basics
 ### Variables
