@@ -64,7 +64,7 @@ var car = { // define our object with the below properties and values
     this.odometer = this.odometer + tripDistance; // add our trip's distnace to our car's odometer
   },
   clean: function(wash, wax, vacuum) {
-    var message = 'You've '; // initialize a string for us to concatenate values onto
+    var message = "You've "; // initialize a string for us to concatenate values onto
     if (wash) {
       message = message + 'washed '; // concat the word washed to the message
     }
