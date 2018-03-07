@@ -40,7 +40,7 @@ myArray.forEach(function(value, index) {
 });
 ```
 
-#### Searching for an item in an array by it's value
+#### Searching `for` an item in an array by it's value
 ```javascript
 var foundIndex = myArray.indexOf('Value 2'); // stores the found index in a variable
 var foundValue = myArray[foundIndex]; // store the found value in a variable
@@ -141,7 +141,7 @@ function myFunction(someString, someBoolean, someNumber) {
 ```
 
 ### Conditionals
-#### A basic if conditional
+#### A basic `if` conditional
 ```javascript
 var iLikePizza = true; // store a boolean value
 if (iLikePizza) {
@@ -149,7 +149,7 @@ if (iLikePizza) {
 }
 ```
 
-#### A basic if/else conditional
+#### A basic `if`/`else` conditional
 ```javascript
 var iLikeBurgers = true; // store a boolean value
 if (iLikeBurgers) {
@@ -159,7 +159,7 @@ if (iLikeBurgers) {
 }
 ```
 
-#### A basic if/else if/else conditional
+#### A basic `if`/`else if`/`else` conditional
 ```javascript
 var steakPreference = prompt('How do you like your steak?'); // store a string value from user input
 
@@ -171,7 +171,7 @@ if (steakPreference === 'rare') { // NOTE the triple equal, this indicates a com
   // ... your logic to perform if you prefer steak any other way between the braces {}
 }
 ```
-#### A nested if
+#### A nested `if`
 ```javascript
 var isSitting = confirm('Are you sitting?'); // store a boolean value from user input
 
