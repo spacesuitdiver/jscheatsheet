@@ -88,8 +88,9 @@ var car = { // define our object with the below properties and values
   odometer: 41077, // ALOTT ;)
   'fuel type': 'Gasoline', // defines a string with a property including a space
   checkEngineLightOn: true, // defines a boolean
-  fixCar: function () { // defines a function (NOTE: this is known as an objects "method")
-    this.checkEngineLightOn = false;
+  fixCar: function () { // defines a function (known as an object's "method")
+    this.checkEngineLightOn = false; 
+    // the use of `this` above is how we can modify object values from an objects function/method
   },
   drive: function (tripDistance) {
     this.odometer = this.odometer + tripDistance; // add our trip's distnace to our car's odometer
