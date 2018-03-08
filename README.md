@@ -1,7 +1,7 @@
 # JavaScript Cheat Sheet
 
-## BASICS
-### Variables
+## Basics
+### VARIABLES
 #### Defining
 ```javascript
 var myString = 'Hello World';
@@ -9,7 +9,7 @@ var myNumber = 42; // the meaning of life of course
 var myBoolean = true;
 ```
 
-### Arrays
+### ARRAYS
 #### Defining
 ```javascript
 var myArray = ['Value 1', 'Value 2', 'Value 3'];
@@ -47,7 +47,7 @@ var foundValue = myArray[foundIndex]; // store the found value in a variable
 console.log(foundIndex, foundValue); // logs both the index and value (`console.log` supports infinite arguments)
 ```
 
-### Objects
+### OBJECTS
 #### Defining
 ```javascript
 var car = { // define our object with the below properties and values
@@ -113,7 +113,7 @@ var myCarsCleanliness = car.wash(true, false, false); // executes and stores the
 console.log(myCarsCleanliness); // logs "You've washed your car." 
 ```
 
-### Functions
+### FUNCTIONS
 #### Defining (in global or current scope)
 ```javascript
 function myFunction() {
@@ -145,7 +145,7 @@ function myFunction(someString, someBoolean, someNumber) {
 myFunction('a string', true, 1337); 
 ```
 
-### Conditionals
+### CONDITIONALS
 #### `if` conditional
 ```javascript
 var iLikePizza = true; // store a boolean value
@@ -193,7 +193,7 @@ if (isSitting) { // NOTE the triple equal, this indicates a comparison instead o
 }
 ```
 
-## DOM MANIPULATION
+## DOM Manipulation
 #### Retrieving an element (by id)
 ```html
 <header id="my-header">
@@ -242,7 +242,7 @@ myHeader.appendChild(mySubtitleElement); // append the previously created h2 to 
 // <header><h1>My Portfolio</h1><h2>My portfolio is the best!</h2></header> 
 ```
 
-## OTHER HELPFUL ITEMS
+## Other Helpful Items
 
 ### Combining strings (using `+`)
 ```javascript
