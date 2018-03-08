@@ -20,6 +20,11 @@ var myArray = ['Value 1', 'Value 2', 'Value 3'];
 myArray[1]; // outputs "Value 2"
 ```
 
+#### Retriving length
+```javascript
+myArray.length; // outputs 3
+```
+
 #### Iterating (using `for`)
 ```javascript
 for (i = 0; i < myArray.length; i++) {
@@ -40,11 +45,19 @@ myArray.forEach(function(myValue, myIndex) {
 });
 ```
 
-#### Searching for an item in an array by it's value
+#### Searching (by value)
 ```javascript
 var foundIndex = myArray.indexOf('Value 2'); // stores the found index in a variable
 var foundValue = myArray[foundIndex]; // store the found value in a variable
 console.log(foundIndex, foundValue); // logs both the index and value (`console.log` supports infinite arguments)
+```
+
+#### Searching (for non-existence)
+```javascript
+var foundIndex = myArray.indexOf('Something Not Here'); // stores the found index in a variable
+if (foundIndex === -1) {
+  console.log('not here'); // logs not here
+}
 ```
 
 ### OBJECTS
