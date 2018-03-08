@@ -255,6 +255,15 @@ myHeader.appendChild(mySubtitleElement); // append the previously created h2 to 
 // <header><h1>My Portfolio</h1><h2>My portfolio is the best!</h2></header> 
 ```
 
+### DOM Events
+
+#### Keyboard Press
+```javascript
+document.onkeyup = function(e) {
+  console.log(e.key); // logs the user's key input when they release the key
+};
+```
+
 ## Other Helpful Items
 
 #### Combining strings (using `+`)
