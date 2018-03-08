@@ -60,6 +60,24 @@ if (foundIndex === -1) {
 }
 ```
 
+#### Adding to (`push()`)
+```javascript
+myArray.push('Value 4');
+// note the above line does not require an variable additional assignment
+console.log(myArray); // logs "['Value 1', 'Value 2', 'Value 3', 'Value 4']"
+```
+
+#### Adding to (`concat()`)
+```javascript
+var someOtherArray = ['Value 4'];
+myArray = myArray.concat(someOtherArray);
+myArray = myArray.concat(['Value 5']);
+// note the above line requires an additional variable assignment (`myArray = ...`)
+// also note you pass an array into concat() instead of a value
+console.log(myArray); // logs "['Value 1', 'Value 2', 'Value 3', 'Value 4', 'Value 5']"
+```
+
+
 ### OBJECTS
 #### Defining
 ```javascript
