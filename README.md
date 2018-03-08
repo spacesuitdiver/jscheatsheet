@@ -278,3 +278,10 @@ console.log(hello); // logs "Hello, I am Chris, I am NOT 40... yet"
 var myRandomNumber = Math.floor(Math.random() * 10) + 1; // stores a random number between 1 and 10 in a variable named `myRandomNumber
 ```
 
+### Change Casing
+```javascript
+var leetString = 'SooO LeEt';
+var quietString = leetString.toLowerCase();
+var loudString = leetString.toUpperCase();
+console.log(quietString, loudString); // logs "sooo leet" and "SOOO LEET"
+```
