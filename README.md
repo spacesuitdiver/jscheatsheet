@@ -257,7 +257,7 @@ myHeader.appendChild(mySubtitleElement); // append the previously created h2 to 
 
 ## Other Helpful Items
 
-### Combining strings (using `+`)
+#### Combining strings (using `+`)
 ```javascript
 var age = 40;
 var hello = 'Hello, I am Chris, I am NOT ' + age + '... yet'; 
@@ -265,7 +265,7 @@ var hello = 'Hello, I am Chris, I am NOT ' + age + '... yet';
 console.log(hello); // logs "Hello, I am Chris, I am NOT 40... yet"
 ```
 
-### Combining strings (using backticks aka template literals)
+#### Combining strings (using backticks aka template literals)
 ```javascript
 var age = 40;
 var hello = `Hello, I am Chris, I am NOT ${age}... yet`; 
@@ -273,15 +273,21 @@ var hello = `Hello, I am Chris, I am NOT ${age}... yet`;
 console.log(hello); // logs "Hello, I am Chris, I am NOT 40... yet"
 ```
 
-### Random Number (one of a few methods)
+#### Random Number (one of a few methods)
 ```javascript
 var myRandomNumber = Math.floor(Math.random() * 10) + 1; // stores a random number between 1 and 10 in a variable named `myRandomNumber
 ```
 
-### Change Casing
+#### Case Changing
 ```javascript
 var leetString = 'SooO LeEt';
 var quietString = leetString.toLowerCase();
 var loudString = leetString.toUpperCase();
 console.log(quietString, loudString); // logs "sooo leet" and "SOOO LEET"
+```
+
+#### First Character
+```javascript
+var hello = 'hello';
+console.log(hello.charAt(0)); // logs "h"
 ```
