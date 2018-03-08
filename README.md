@@ -20,7 +20,7 @@ var myArray = ['Value 1', 'Value 2', 'Value 3'];
 myArray[1]; // outputs "Value 2"
 ```
 
-#### Iterating using `for`
+#### Iterating (using `for`)
 ```javascript
 for (i = 0; i < myArray.length; i++) {
   console.log(i); // logs the current interation's index
@@ -32,7 +32,7 @@ for (i = 0; i < myArray.length; i++) {
 }
 ```
 
-#### Iterating using `forEach`
+#### Iterating (using `forEach`)
 ```javascript
 myArray.forEach(function(value, index) {
   console.log(index); // logs the current interation's index
@@ -40,7 +40,7 @@ myArray.forEach(function(value, index) {
 });
 ```
 
-#### Searching `for` an item in an array by it's value
+#### Searching for an item in an array by it's value
 ```javascript
 var foundIndex = myArray.indexOf('Value 2'); // stores the found index in a variable
 var foundValue = myArray[foundIndex]; // store the found value in a variable
@@ -81,67 +81,72 @@ var car = { // define our object with the below properties and values
 };
 ```
 
-#### Assigning values using dot notation
+#### Assigning values (dot notation)
 ```javascript
 car.make = 'Nissan'; // Changes the make property from 'Volkswagen' to 'Nissan'
 ```
 
-#### Assigning values using `[]` (brackets) (needed for properties with spaces)
+#### Assigning values (`[]` (brackets)) (needed for properties with spaces)
 ```javascript
 car['make'] = 'Nissan';
 ```
 
-#### Retrieving a property value
+#### Retrieving a value
 ```javascript
 var myYear = car.year; // stores the car's year in a variable named `myYear`
 console.log(year); // logs the cars year 2006
 ```
 
-#### Executing an object's method
+#### Executing a method
 ```javascript
 car.fixCar(); // executes the `fixCar` method thus setting the check engine light to false (turning it off)
 ```
 
-#### Executing an object's method with arguments
+#### Executing a method (arguments)
 ```javascript
 car.drive(100); // executes the `drive` method thus adding 100 miles to the odometer
 ```
 
-#### Executing an object's method with multiple arguments
+#### Executing a method (multiple arguments)
 ```javascript
 var myCarsCleanliness = car.wash(true, false, false); // executes and stores the `clean` (performing only a wash, the first argument) method's return value in a variable `myCarsCleanliness`.
 console.log(myCarsCleanliness); // logs "You've washed your car." 
 ```
 
 ### Functions
-#### Defining in global or current scope
+#### Defining (in global or current scope)
 ```javascript
 function myFunction() {
   // ... your logic here between the braces {}
 }
 ```
 
-#### Defining as a variable
+#### Defining (as a variable)
 ```javascript
 var myFunction = function() {
   // ... your logic here between the braces {}  
 }
 ```
 
-#### Executing a function
+#### Executing
 ```javascript
 myFunction();
 ```
 
-#### Defining multiple function arguments
+#### Defining (multiple arguments)
 ```javascript
 function myFunction(someString, someBoolean, someNumber) {
   // ... your logic here between the braces {}    
 }
 ```
 
+#### Executing (multiple arguments)
+```javscript
+myFunction('a string', true, 1337); 
+```
+
 ### Conditionals
-#### A basic `if` conditional
+#### `if` conditional
 ```javascript
 var iLikePizza = true; // store a boolean value
 if (iLikePizza) {
@@ -149,7 +154,7 @@ if (iLikePizza) {
 }
 ```
 
-#### A basic `if`/`else` conditional
+#### `if`/`else` conditional
 ```javascript
 var iLikeBurgers = true; // store a boolean value
 if (iLikeBurgers) {
@@ -159,7 +164,7 @@ if (iLikeBurgers) {
 }
 ```
 
-#### A basic `if`/`else if`/`else` conditional
+#### `if`/`else if`/`else` conditional
 ```javascript
 var steakPreference = prompt('How do you like your steak?'); // store a string value from user input
 
@@ -171,7 +176,7 @@ if (steakPreference === 'rare') { // NOTE the triple equal, this indicates a com
   // ... your logic to perform if you prefer steak any other way between the braces {}
 }
 ```
-#### A nested `if`
+#### `if`/`else` (nested)
 ```javascript
 var isSitting = confirm('Are you sitting?'); // store a boolean value from user input
 
@@ -188,13 +193,8 @@ if (isSitting) { // NOTE the triple equal, this indicates a comparison instead o
 }
 ```
 
-#### Executing a function with multiple arguments
-```javscript
-myFunction('a string', true, 1337); 
-```
-
 ## DOM Manipulation
-#### Retrieving an element by id for manipulation
+#### Retrieving an element (by id)
 ```html
 <header id="my-header">
   <h1 id="my-title"></h1>
@@ -204,7 +204,7 @@ myFunction('a string', true, 1337);
 var myTitleElement = document.getElementBy('my-title'); // stores the element above in a JavaScript variable
 ```
 
-#### Retrieving an element by selector (similar to css selectors) for manipulation
+#### Retrieving an element (by selector (similar to style selectors))
 ```html
 <div class="green"></div>
 <div class="green bold"></div>
@@ -221,20 +221,20 @@ myTitleElement.textContent = 'My Portfolio'; // sets the text of the `<h1>` abov
 // <header><h1>My Portfolio</h1></header>
 ```
 
-#### Setting an element's inner content which includes some HTML
+#### Setting an element's inner content (which includes some HTML)
 ```javascript
 myTitleElement.innerHTML = '<a href="/portfolio.html">My Portfolio</a>'; 
 // this populates the h1 with HTML and results in this on your page:
 // <header><h1><a href="/portfolio.html">My Portfolio</a></h1></header>
 ```
 
-#### Creating and manipulating a new HTML element in JavaScript
+#### Creating and manipulating a new element
 ```javascript
 mySubtitleElement = document.createElement('h2'); // stores a new h2 in a JavaScript variable
 mySubtitleElement.textContent = 'My portfolio is the best!'; // sets the inner text of the stored variable
 ```
 
-#### Putting your created element on the page using `appendChild()`
+#### Appending new element the page (using `appendChild()`)
 ```javascript
 var myHeader = document.getElementById('my-header'); // store where we want to put our new element
 myHeader.appendChild(mySubtitleElement); // append the previously created h2 to the `<header>` element
@@ -244,10 +244,19 @@ myHeader.appendChild(mySubtitleElement); // append the previously created h2 to 
 
 ## Other Helpful Things
 
-### Combining strings using `+`
+### Combining strings (using `+`)
 ```javascript
 var age = 40;
-var hello = 'Hello, I am Chris, I am NOT ' + age + '... yet'; // concatinates the above value and stores them in a new variable
+var hello = 'Hello, I am Chris, I am NOT ' + age + '... yet'; 
+// above line concatinates our string and age variable and stores them in a new variable
+console.log(hello); // logs "Hello, I am Chris, I am NOT 40... yet"
+```
+
+### Combining strings (using backticks aka template literals)
+```javascript
+var age = 40;
+var hello = `Hello, I am Chris, I am NOT ${age}... yet`; 
+// above line concatinates our string and age variable and stores them in a new variable
 console.log(hello); // logs "Hello, I am Chris, I am NOT 40... yet"
 ```
 
