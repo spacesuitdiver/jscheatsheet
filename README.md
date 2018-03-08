@@ -1,6 +1,6 @@
 # JavaScript Cheat Sheet
 
-## Basics
+## BASICS
 ### Variables
 #### Defining
 ```javascript
@@ -193,7 +193,7 @@ if (isSitting) { // NOTE the triple equal, this indicates a comparison instead o
 }
 ```
 
-## DOM Manipulation
+## DOM MANIPULATION
 #### Retrieving an element (by id)
 ```html
 <header id="my-header">
@@ -242,7 +242,7 @@ myHeader.appendChild(mySubtitleElement); // append the previously created h2 to 
 // <header><h1>My Portfolio</h1><h2>My portfolio is the best!</h2></header> 
 ```
 
-## Other Helpful Things
+## OTHER HELPFUL ITEMS
 
 ### Combining strings (using `+`)
 ```javascript
