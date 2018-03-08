@@ -81,12 +81,13 @@ var car = { // define our object with the below properties and values
 };
 ```
 
-#### Assigning values (dot notation)
+#### Assigning values (using dot notation)
 ```javascript
 car.make = 'Nissan'; // Changes the make property from 'Volkswagen' to 'Nissan'
 ```
 
-#### Assigning values (`[]` (brackets)) (needed for properties with spaces)
+#### Assigning values (using `[]` aka brackets)* 
+* needed for properties with spaces
 ```javascript
 car['make'] = 'Nissan';
 ```
