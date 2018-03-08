@@ -189,6 +189,19 @@ if (steakPreference === 'rare') { // NOTE the triple equal, this indicates a com
   // ... your logic to perform if you prefer steak any other way between the braces {}
 }
 ```
+#### `if` (multiple conditions)
+```javascript
+// variables from above
+var age = 40;
+if (age > 18 && age < 21) {
+  console.log('you can smoke but you can't drink');
+} else if (age < 18) {
+   console.log('stay healthy youngin');
+} else {
+  console.log('PARTYYYYYYY'); // we're 40, we party... hard.
+}
+```
+
 #### `if`/`else` (nested)
 ```javascript
 var isSitting = confirm('Are you sitting?'); // store a boolean value from user input
