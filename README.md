@@ -34,9 +34,9 @@ for (i = 0; i < myArray.length; i++) {
 
 #### Iterating (using `forEach`)
 ```javascript
-myArray.forEach(function(value, index) {
-  console.log(index); // logs the current interation's index
-  console.log(someValueFromArray); // logs the array value
+myArray.forEach(function(myValue, myIndex) {
+  console.log(myValue); // logs the array value
+  console.log(myIndex); // logs the current interation's index
 });
 ```
 
