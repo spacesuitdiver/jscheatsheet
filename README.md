@@ -87,9 +87,8 @@ car.make = 'Nissan'; // Changes the make property from 'Volkswagen' to 'Nissan'
 ```
 
 #### Assigning values (using `[]` aka brackets**) 
-** needed for properties with spaces
 ```javascript
-car['make'] = 'Nissan';
+car['fuel type'] = 'Diesel'; // needed for properties with spaces
 ```
 
 #### Retrieving a value
