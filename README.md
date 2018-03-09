@@ -213,7 +213,7 @@ if (steakPreference === 'rare') { // NOTE the triple equal, this indicates a com
 // variables from above
 var age = 40;
 if (age > 18 && age < 21) {
-  console.log('you can smoke but you can't drink');
+  console.log('you can smoke but you can\'t drink');
 } else if (age < 18) {
    console.log('stay healthy youngin');
 } else {
@@ -246,7 +246,7 @@ if (isSitting) { // NOTE the triple equal, this indicates a comparison instead o
 </header>
 ```
 ```javascript
-var myTitleElement = document.getElementBy('my-title'); // stores the element above in a JavaScript variable
+var myTitleElement = document.getElementById('my-title'); // stores the element above in a JavaScript variable
 ```
 
 #### Retrieving an element (by selector (similar to style selectors))
