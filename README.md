@@ -141,7 +141,7 @@ car.drive(100); // executes the `drive` method thus adding 100 miles to the odom
 
 #### Executing a method (multiple arguments)
 ```javascript
-var myCarsCleanliness = car.wash(true, false, false); // executes and stores the `clean` (performing only a wash, the first argument) method's return value in a variable `myCarsCleanliness`.
+var myCarsCleanliness = car.clean(true, false, false); // executes and stores the `clean` (performing only a wash, the first argument) method's return value in a variable `myCarsCleanliness`.
 console.log(myCarsCleanliness); // logs "You've washed your car." 
 ```
 
